@@ -39,6 +39,7 @@ echo "Unzipping..."
 mkdir -p "bootstrap" || exit 1
 cd "bootstrap" || exit 1
 unzip -q ../bootstrap.zip || exit 1
+mv boot*/* ./ || exit 1
 cd .. || exit 1
 
 #delete the zipball
